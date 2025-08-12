@@ -1,0 +1,143 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Patrick Iteghie
+% Based off of : https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+% Core document setup
+\usepackage[margin=0.5in]{geometry}
+\usepackage[english]{babel}
+
+% Colors and formatting
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{titlesec}
+
+% Lists and tables
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% Links and PDF accessibility
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+
+% Fonts and symbols
+\usepackage{latexsym}
+\usepackage{newtxtext,newtxmath}
+
+% Headers and footers
+\usepackage{fancyhdr}
+
+% Page style and spacing
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlist{nosep,leftmargin=*}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{\fontsize{13pt}{15pt}\selectfont\scshape}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+
+% Ensure PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+% List commands
+\newcommand{\resumeSubheadingListStart}{\begin{itemize}[leftmargin=0pt,label={},itemsep=2pt]}
+\newcommand{\resumeSubheadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=\textbullet,leftmargin=0.2in,itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+% Subheading: 1 line with bold, plain, and italic text
+\newcommand{\resumeSubheadingOneLine}[3]{\item \textbf{#1} \textbar\ \textit{#2} \hfill\textbf{#3}}
+% Subheading: 2 lines with bold and italic text
+\newcommand{\resumeSubheadingTwoLine}[4]{\item \textbf{#1}\hfill\textbf{#2}\\
+  \textit{#3}\hfill\textit{#4}}
+\newcommand{\resumeItem}[1]{\item #1}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \vspace*{-18pt}
+  {\fontsize{15pt}{16pt}\selectfont\textbf{Patrick Iteghie}}\\
+  \vspace{2pt}
+  {\href{tel:+14692124668}{(469) 212-4668} \textbar\ \href{mailto:piteghie@outlook.com}{piteghie@outlook.com} \textbar\ 
+  \href{https://www.linkedin.com/in/patrick-iteghie}{linkedin.com/in/patrick-iteghie} \textbar\ Gainesville, FL}
+  \vspace{-2pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubheadingListStart
+  \resumeSubheadingTwoLine{University of Florida}{May 2027}{Bachelor of Science in Computer Science and Mechanical Engineering}{GPA: 3.97}
+  \item \textbf{Relevant Coursework:} Data Structures \& Algorithms, Algorithm Abstraction \& Design, Operating Systems, Database Systems, Programming Language Concepts, Computer Organization, Discrete Structures, Statistics, Linear Algebra, Numerical Methods
+\resumeSubheadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Experience}}
+\resumeSubheadingListStart
+  \resumeSubheadingTwoLine{Expedia Group}{Seattle, WA}{Software Development Engineering Intern}{May 2025 -- Jul 2025}
+  \resumeItemListStart
+    \resumeItem{Engineered a scalable gRPC Configuration Management microservice in Kotlin and Spring Boot using hexagonal architecture, enabling a \$24M revenue opportunity through automated partner ad placement.}
+    \resumeItem{Implemented CRUD APIs with MongoDB persistence and Protocol Buffers schemas for type-safe microservice communication.}
+    \resumeItem{Integrated JWT-based SVID authentication and authorization, securing all workload communications.}
+    \resumeItem{Achieved 90\%+ code coverage using JUnit 5 and MockK, maintaining code quality through Detekt, SonarQube, and JaCoCo.}
+    \resumeItem{Conducted comprehensive UAT and integration testing to validate business logic and ensure service stability before deployment.}
+    \resumeItem{Streamlined CI/CD pipeline using GitHub Actions, Docker containerization, and Spinnaker deployment with DataDog monitoring.}
+  \resumeItemListEnd
+
+  \resumeSubheadingTwoLine{Ultimate Kronos Group}{Weston, FL}{Software Engineering Intern}{May 2024 -- Aug 2024}
+  \resumeItemListStart
+    \resumeItem{Maintained and optimized the Pro Import Engine in C\#, processing millions of monthly transactions and integrating data across multiple business processes in an Agile environment.}
+    \resumeItem{Accelerated end-to-end test suite execution by 49\% (32 to 16 hours) using Selenium and NUnit, preserving quality and coverage.}
+    \resumeItem{Diagnosed and resolved critical CI pipeline test failures in TeamCity, addressing authorization and authentication issues to strengthen application security measures.}
+    \resumeItem{Safeguarded against DDoS attacks by conducting comprehensive UI tests across multiple servers using Postman, TestRail, and Splunk, validating the Web Application Firewall performance.}
+  \resumeItemListEnd
+
+  \resumeSubheadingTwoLine{UF Digital Worlds Institute}{Gainesville, FL}{Research Assistant}{Jan 2023 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Co-authored "Investigating the Adoption and Integration of Game-Based Web Applications for Supplementing Literacy Instruction: A Longitudinal Case Study," submitted to Frontiers in Education.}
+    \resumeItem{Collaborated with a multidisciplinary team to conduct nationwide survey research with 60+ K-2 teachers and tutors across 25 US states, examining adoption patterns and educational effectiveness of web-based literacy tools.}
+    \resumeItem{Analyzed usage data across different instructional settings to identify patterns and guide future educational technology development.}
+  \resumeItemListEnd
+
+  \resumeSubheadingTwoLine{UF Design and Manufacturing Lab}{Gainesville, FL}{Teaching Assistant}{Jan 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Mentored 30+ engineering students through design processes, from concept planning to prototype development and iterative testing.}
+    \resumeItem{Trained students on technical equipment operation, emphasizing safety protocols, standards, and troubleshooting methodologies.}
+    \resumeItem{Guided students in technical documentation practices, emphasizing clarity, accuracy, and completeness in design reports.}
+  \resumeItemListEnd
+\resumeSubheadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+\resumeSubheadingListStart
+  \resumeSubheadingOneLine{CURE Apps for Good}{JavaScript, Node.js, HTML, CSS, op.n framework (UF web platform)}{Jan 2023 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Developed cross-platform literacy games for K-2 students with 100,000+ daily active users, implementing responsive web design for compatibility across desktop, tablet, and mobile devices.}
+    \resumeItem{Designed an automated Node.js pipeline to streamline digitization of 100+ vocabulary lessons, eliminating manual conversion.}
+    \resumeItem{Managed development using GitHub and Agile methodology, coordinating weekly sprint cycles to deliver 8 educational games.}
+  \resumeItemListEnd
+
+  \resumeSubheadingOneLine{Cinema Compass}{Python, NumPy, Pandas, NetworkX, Streamlit}{Jul 2023 -- Aug 2023}
+  \resumeItemListStart
+    \resumeItem{Built a graph-based actor discovery web application processing 20,000+ IMDb entries using BFS/DFS algorithms with $<\!0.1$s search performance, winning first place in class competition.}
+    \resumeItem{Created an interactive network visualization with NetworkX and Pyvis, deployed via Streamlit for cross-platform web access.}
+    \resumeItem{Established a data processing pipeline using NumPy and Pandas to manipulate actor records, integrating Cinemagoer API for real-time movie information retrieval.}
+  \resumeItemListEnd
+\resumeSubheadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{Technical Skills}}
+\resumeSubheadingListStart
+  \item{\textbf{Languages}: C++, Java, Python, JavaScript, C\#, Kotlin, MATLAB}
+  \item{\textbf{Technologies \& DevOps}: Node.js, MongoDB, SQL, Docker, gRPC, REST, Protocol Buffers, Postman, Git, Bitbucket, Jira, TeamCity, GitHub Actions, Spinnaker, Maven, Artifactory, TestRail, Splunk, DataDog, JWT, SVID}
+  \item{\textbf{Frameworks \& Libraries}: Spring Boot, .NET, React, JUnit, NUnit, Selenium, MockK, JaCoCo, Detekt, SonarQube, NumPy, Pandas}
+\resumeSubheadingListEnd
+
+\end{document}

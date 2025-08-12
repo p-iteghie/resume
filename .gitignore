@@ -1,0 +1,11 @@
+# LaTeX intermediate and output files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.synctex.gz
+
+# VS Code settings
+.vscode/
